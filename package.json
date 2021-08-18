@@ -57,7 +57,7 @@
     "prettier": "2.3.2"
   },
   "lint-staged": {
-    "*.{.tsx,.ts}": "eslint --cache --fix",
-    "*.{ts,tsx,css,md}": "prettier --write"
+    "*.{.tsx,.ts}": "npx eslint '**/*{.ts,.tsx}' --fix",
+    "*.{ts,tsx,css,md}": "npx prettier --write"
   }
 }
