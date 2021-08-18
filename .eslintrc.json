@@ -21,6 +21,7 @@
     "react/react-in-jsx-scope": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "error",
-    "prefer-const": "off"
+    "prefer-const": "off",
+    "react/prop-types": "off"
   }
 }
