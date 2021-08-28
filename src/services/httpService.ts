@@ -5,7 +5,7 @@ const instance = axios.create({
   timeout: 15000,
 });
 
-const responseBody = () => (response: AxiosResponse) => response.data.data;
+const responseBody = (response: AxiosResponse) => response.data.data;
 
 const requests = {
   get: (url: string) => instance.get(url).then(responseBody),
