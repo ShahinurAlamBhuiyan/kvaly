@@ -31,6 +31,7 @@ const useAsync = <T>(asyncFunction: () => Promise<T>) => {
     isLoading: status === 'pending',
     isSuccess: status === 'success',
     isError: status === 'error',
+    error,
   };
 };
 
