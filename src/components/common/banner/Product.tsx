@@ -9,8 +9,8 @@ interface IProps {
 const Product = ({ product }: IProps) => {
   const { name, image } = product;
   return (
-    <Col md={3} className="mb-3">
-      <Card>
+    <Col md={3} className="mb-3" style={{ minHeight: '400px' }}>
+      <Card className="h-100">
         <Card.Img variant="top" src={imageUrlParser(image)} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
