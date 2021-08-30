@@ -44,7 +44,9 @@ const Header = () => {
       <div className="middle_header">
         <Container>
           <div className="d-flex align-items-center gap-5 py-3">
-            <img className="branding" src={logo} alt="" />
+            <Link to="/">
+              <img className="branding" src={logo} alt="" />
+            </Link>
             <InputGroup>
               <FormControl
                 className="border border-primary"
@@ -64,7 +66,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <BiUser />
+                <Link to="/login">
+                  <BiUser />
+                </Link>
               </li>
             </ul>
           </div>

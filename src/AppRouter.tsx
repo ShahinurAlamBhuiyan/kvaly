@@ -4,6 +4,7 @@ import ProductDetails from 'pages/ProductDetails/ProductDetails';
 import Footer from 'components/common/Footer';
 const Home = React.lazy(() => import('./pages/Home/Home'));
 const Help = React.lazy(() => import('./pages/Help/Help'));
+const Login = React.lazy(() => import('./pages/Login/Login'));
 const Checkout = React.lazy(() => import('./pages/Checkout/Checkout'));
 
 const AppRouter: React.FC = ({ children }) => {
@@ -16,6 +17,7 @@ const AppRouter: React.FC = ({ children }) => {
           <Route path="/help" component={Help} />
           <Route path="/product/:id" component={ProductDetails} />
           <Route path="/checkout/" component={Checkout} />
+          <Route path="/login" component={Login} />
         </Suspense>
       </Switch>
       <Footer />
