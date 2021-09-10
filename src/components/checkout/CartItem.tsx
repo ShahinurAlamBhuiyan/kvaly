@@ -2,7 +2,7 @@ import { IProduct } from 'Models/types';
 import { Col, Row } from 'react-bootstrap';
 import { FaRegTimesCircle } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
-import { removeFromCart } from 'redux/actions/cartAction';
+import { removeFromCart } from 'redux/actionsCreators/cartAction';
 import imageUrlParser from 'utils/imageUrlParser';
 
 interface IProps {

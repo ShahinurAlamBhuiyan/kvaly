@@ -11,7 +11,7 @@ import ProductService from 'services/ProductService';
 import imageUrlParser from 'utils/imageUrlParser';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { addToCart } from 'redux/actions/cartAction';
+import { addToCart } from 'redux/actionsCreators/cartAction';
 
 interface IParams {
   id: string;
